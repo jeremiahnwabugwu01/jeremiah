@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Application</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    .form-section {
+      max-width: 600px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #2c3e50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #1a252f;
+    }
+    .table-section {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #ecf0f1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Apply for Your Dream Job</h1>
+  </header>
+
+  <section class="form-section">
+    <form action="#" method="post" enctype="multipart/form-data">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="resume">Upload Resume</label>
+      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+  <section class="table-section">
+    <h2>Recent Applicants</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Position</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Grace Eze</td>
+          <td>Frontend Developer</td>
+          <td>Under Review</td>
+        </tr>
+        <tr>
+          <td>Michael Adeyemi</td>
+          <td>UI/UX Designer</td>
+          <td>Interview Scheduled</td>
+        </tr>
+        <tr>
+          <td>Fatima Bello</td>
+          <td>Backend Engineer</td>
+          <td>Shortlisted</td>
+        </tr>
+        <tr>
+          <td>Chinedu Obi</td>
+          <td>Data Analyst</td>
+          <td>Rejected</td>
+        </tr>
+        <tr>
+          <td>Linda Okafor</td>
+          <td>Project Manager</td>
+          <td>Offer Sent</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+</body>
+</html>

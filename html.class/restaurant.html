@@ -1,0 +1,86 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: rgb(27, 158, 44);
+      padding: 10px 20px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: rgb(22, 22, 22);
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .main-section {
+      padding: 20px;
+      text-align: center;
+    }
+    .dish {
+      display: inline-block;
+      margin: 20px;
+      text-align: center;
+    }
+    .dish img {
+      width: 200px;
+      height: 150px;
+      border-radius: 10px;
+    }
+    .dish h3 {
+      margin: 10px 0 5px;
+    }
+    .dish p {
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Delicious Bites</h1>
+      <div>
+        <a href="#menu">Menu</a>
+        <a href="#reservations">Reservations</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-section">
+    <h2>Our Special Dishes</h2>
+    <div class="dish">
+      <img src="dish1.jpg" alt="Grilled Salmon"class="gallery one" id="my first dish">
+      <h3>Grilled Salmon</h3>
+      <p>Price:$9.99</p>
+    </div>
+    <div class="dish">
+      <img src="dish2.jpg" alt="Pasta Primavera"class="gallery two" id="my second dish">
+      <h3>pasta primavera</h3>
+      <p>Price: $25.72</p>
+    </div>
+    <div class="dish">
+      <img src="dish3.jpg" alt="Chocolate Lava Cake" class="gallery three" id="my third dish">
+      <h3>Chocolate Lava Cake</h3>
+      <p>Price: $12.99</p>
+    </div>
+  </main>
+</body>
+</html>
+
